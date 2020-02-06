@@ -836,6 +836,11 @@ public class Jenkins extends AbstractCIBase implements DirectlyModifiableTopLeve
     private Boolean noUsageStatistics;
 
     /**
+     * True to enable the new UI that came out of the work of the UX SIG
+     */
+    private Boolean useNewUI;
+
+    /**
      * HTTP proxy configuration.
      */
     public transient volatile ProxyConfiguration proxy;
@@ -1390,6 +1395,14 @@ public class Jenkins extends AbstractCIBase implements DirectlyModifiableTopLeve
     public void setNoUsageStatistics(Boolean noUsageStatistics) throws IOException {
         this.noUsageStatistics = noUsageStatistics;
         save();
+    }
+
+    public boolean isUseNewUI() {
+        return useNewUI != null && useNewUI;
+    }
+
+    public void setUseNewUI(Boolean useNewUI) {
+        this.useNewUI = useNewUI;
     }
 
     public View.People getPeople() {

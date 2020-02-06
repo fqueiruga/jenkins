@@ -92,7 +92,7 @@ THE SOFTWARE.
   </j:if>
 </j:if>
 <x:doctype name="html" />
-<html class="${h.getSystemProperty('jenkins.ui.refresh') ? 'ui-refresh' : ''}">
+<html class="${app.useNewUI ? 'ui-refresh' : ''}">
   <head data-rooturl="${rootURL}" data-resurl="${resURL}" resURL="${resURL}">
     ${h.checkPermission(it,permission)}
 
