@@ -1,0 +1,110 @@
+import { Story, Preview, Meta  } from '@storybook/addon-docs/blocks';
+
+
+<Meta title="Buttons" />
+
+# Buttons
+
+## Raw HTML
+
+### Normal buttons
+
+<Preview>
+  <Story name="Button basic">
+    {() => `
+      <div>
+        <h4>Buttons</h4>
+        <span class="yui-button primary">
+          <button>Primary</button>
+        </span>
+        <span class="yui-button">
+          <button>Secondary</button>
+        </span>
+        <span class="yui-button danger">
+          <button>Danger</button>
+        </span>
+        <span class="yui-button link-button">
+          <button>Link</button>
+        </span>
+      </div>
+      <br>
+      </div>
+      <div>
+        <h4>Anchor buttons</h4>
+        <a href="#" class="yui-button primary">Primary</a>
+        <a href="#" class="yui-button">Sencodary</a>
+        <a href="#" class="yui-button danger">Danger</a>
+        <a href="#" class="yui-button link-button">Link</a>
+      </div>
+      <br>
+      <div>
+        <h4>Input buttons</h4>
+        <input type="submit" class="primary" value="Primary">
+        <input type="button" value="Secondary">
+      </div>
+    `}
+  </Story>
+</Preview>
+
+### Disabled states
+
+<Preview>
+  <Story name="Disabled buttons">
+    {() => `
+      <span class="yui-button primary">
+        <button disabled>Disabled button</button>
+      </span>
+      <input type="submit" disabled value="Disabled submit input" />
+      <a href="#" class="yui-button danger disabled">Disabled anchor</a>
+      <a href="#" class="yui-button link-button disabled">Disabled anchor</a>
+    `}
+  </Story>
+</Preview>
+
+### Button size
+
+<Preview>
+  <Story name="Button size">
+    {() => `
+      <div>
+        <span class="yui-button primary large-button">
+          <button>Large button</button>
+        </span>
+        <a href="#" class="yui-button large-button">Large button</a>
+      </div>
+      <br>
+      <div>
+        <span class="yui-button primary">
+          <button>Button</button>
+        </span>
+        <a href="#" class="yui-button">Button</a>
+      </div>
+    `}
+  </Story>
+</Preview>
+
+
+## Jelly utilities
+
+### <f:submit\>
+
+Create a submit button to be used in forms. Examples:
+
+`<f:submit name="yes" value="${%Tell me more}" />`
+`<f:submit value="${%Save}" large="true" />`
+
+<Preview>
+  <Story name="Jelly: <f:submit>">
+    {() => `
+      <input type="submit"
+        name="yes"
+        value="Tell me more"
+        class="primary" />
+      <input type="submit"
+        name="Submit"
+        value="Save"
+        class="primary large-button" />
+    `}
+  </Story>
+</Preview>
+
