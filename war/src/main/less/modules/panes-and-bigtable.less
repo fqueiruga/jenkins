@@ -94,9 +94,9 @@ table.bigtable {
   font-weight: var(--bigtable-header-font-weight);
   color: var(--bigtable-header-text-color);
   background: var(--bigtable-header-bg);
-  white-space: nowrap;
-  border-top: var(--bigtable-border-width) solid var(--bigtable-header-bg);
+  border-top: var(--bigtable-border-width) solid var(--bigtable-row-border-color);
   text-align: left;
+  white-space: nowrap;
 
   &.minimum-width {
     width: 1px;
@@ -105,6 +105,14 @@ table.bigtable {
   &[align=right] {
     text-align: right;
   }
+}
+
+// Set a different border for table heading rows
+.bigtable thead th,
+.bigtable tr.header th,
+.bigtable tr:first-child th {
+  // --first-row-border-width: calc(--bigtable-border-width + 1px);
+  border-bottom: 2px solid var(--bigtable-row-border-color);
 }
 
 .bigtable td {
@@ -123,6 +131,14 @@ table.bigtable {
 .bigtable .pane-header,
 .bigtable .pane-footer {
   border-radius: 0;
+}
+
+// Style table footer
+.bigtable tfoot th,
+.bigtable tr.sortbottom th {
+  background-color: transparent;
+  border-top: var(--bigtable-border-width) solid var(--bigtable-row-border-color);
+  border-bottom-width: var(--bigtable-border-width);
 }
 
 /* ========================= sortable table ========================= */

@@ -1,5 +1,7 @@
 .tabBarFrame {
   position: relative;
+
+  margin-bottom: 1.5rem;
 }
 
 .tabBar {
@@ -79,7 +81,9 @@
 }
 
 .tabBar .tab.active a {
-  border: var(--tab-link-border-width) solid var(--tab-link-checked-border-color);
+  border: var(--tab-link-border-width) solid;
+  // Keep the border-color separate from a "border:" declaration in order to allow multiple values
+  border-color: var(--tab-link-checked-border-color);
   background: var(--tab-link-checked-bg);
   color: var(--tab-link-checked-text-color);
   z-index: 2;
