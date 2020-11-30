@@ -28,8 +28,6 @@
         <st:attribute name="ariaHidden">aria-hidden</st:attribute>
     </st:documentation>
 
-    --tag-${attrs.class}--
-
     <svg class="svg-icon ${attrs.class}"
          viewBox="${attrs.viewBox != null ? attrs.viewBox : '0 0 24 24'}"
          focusable="${attrs.focusable != null ? attrs.focusable : 'false'}"

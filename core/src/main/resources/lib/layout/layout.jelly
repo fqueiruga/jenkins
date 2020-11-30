@@ -101,8 +101,8 @@ THE SOFTWARE.
 <x:doctype name="html" />
 <html class="${h.isUiRefreshEnabled() ? 'ui-refresh' : ''}">
   <head data-rooturl="${rootURL}" data-resurl="${resURL}" data-imagesurl="${imagesURL}" resURL="${resURL}"
-        data-extensions-available="${extensionsAvailable}" 
-        data-crumb-header="${h.getCrumbRequestField()}" data-crumb-value="${h.getCrumb(request)}" 
+        data-extensions-available="${extensionsAvailable}"
+        data-crumb-header="${h.getCrumbRequestField()}" data-crumb-value="${h.getCrumb(request)}"
         data-unit-test="${h.isUnitTest}">
     ${h.checkPermission(it,permission)}
     ${h.checkAnyPermission(it, permissions)}
@@ -151,7 +151,7 @@ THE SOFTWARE.
     <!--l:yui module="editor" suffix="-beta" /-->
 
     <script src="${resURL}/scripts/polyfills.js" type="text/javascript" />
-    
+
     <script src="${resURL}/scripts/hudson-behavior.js" type="text/javascript"></script>
     <script src="${resURL}/scripts/sortable.js" type="text/javascript"/>
 
@@ -201,13 +201,22 @@ THE SOFTWARE.
           <path d="M16 8l-8 8 8-8zM8 8l8 8-8-8z"></path>
         </g>
       </symbol>
-      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="last-successful-new-in-progress">
-        <title>last-successful-new-in-progress-1</title>
-        <g fill="#4CAF51" fill-rule="evenodd">
-          <path d="M24.653 12.197a.5.5 0 01.064.064l2.432 2.919a.5.5 0 01-.384.82h-1.099c-.952 5.676-5.888 10-11.834 10-5.018 0-9.317-3.08-11.109-7.454l2.93-.786A9.003 9.003 0 0022.609 16H21.9a.5.5 0 01-.384-.82l2.432-2.92a.5.5 0 01.705-.063zM13.833 2c5.021 0 9.322 3.085 11.112 7.462l-2.93.786A9.003 9.003 0 005.055 12l.81-.001a.5.5 0 01.384.82l-2.432 2.92a.5.5 0 01-.769 0L.616 12.82A.5.5 0 011 12h.998C2.95 6.326 7.886 2 13.832 2z" fill-rule="nonzero"></path>
-          <path d="M12.843 18.894L8.6 14.65l2.121-2.121 2.121 2.121 4.951-4.95 2.122 2.121-7.072 7.073z"></path>
-        </g>
-      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="last-successful-new-in-progress" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+<!--        <title>last-successful-new-in-progress-1</title>-->
+<!--        <g fill="#4CAF51" fill-rule="evenodd">-->
+<!--          <path d="M24.653 12.197a.5.5 0 01.064.064l2.432 2.919a.5.5 0 01-.384.82h-1.099c-.952 5.676-5.888 10-11.834 10-5.018 0-9.317-3.08-11.109-7.454l2.93-.786A9.003 9.003 0 0022.609 16H21.9a.5.5 0 01-.384-.82l2.432-2.92a.5.5 0 01.705-.063zM13.833 2c5.021 0 9.322 3.085 11.112 7.462l-2.93.786A9.003 9.003 0 005.055 12l.81-.001a.5.5 0 01.384.82l-2.432 2.92a.5.5 0 01-.769 0L.616 12.82A.5.5 0 011 12h.998C2.95 6.326 7.886 2 13.832 2z" fill-rule="nonzero"></path>-->
+<!--          <path d="M12.843 18.894L8.6 14.65l2.121-2.121 2.121 2.121 4.951-4.95 2.122 2.121-7.072 7.073z"></path>-->
+<!--        </g>-->
+<!--      </symbol>-->
+      <style>
+        <![CDATA[#e5kav7zkt7cn3_tr {animation: e5kav7zkt7cn3_tr__tr 2200ms linear infinite normal forwards}@keyframes e5kav7zkt7cn3_tr__tr { 0% {transform: translate(12px,12.000001px) rotate(0deg);animation-timing-function: cubic-bezier(0.600000,0.040000,0.980000,0.335000)} 45.454545% {transform: translate(12px,12.000001px) rotate(180deg)} 100% {transform: translate(12px,12.000001px) rotate(180deg)} }#e5kav7zkt7cn3 {animation: e5kav7zkt7cn3_c_o 2200ms linear infinite normal forwards}@keyframes e5kav7zkt7cn3_c_o { 0% {opacity: 0.240000} 45.454545% {opacity: 1} 100% {opacity: 1} }]]>
+      </style>
+      <rect id="e5kav7zkt7cn2" width="24" height="24" rx="0" ry="0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"/>
+      <g id="e5kav7zkt7cn3_tr" transform="translate(12,12.000001) rotate(0)">
+        <path id="e5kav7zkt7cn3" d="M9,2.500000L9,8.500000L6.620000,6.120000C5.020000,7.580000,4,9.670000,4,12C4,16.070000,7.060000,19.440000,11,19.930000L11,19.930000L11,21.950000C5.950000,21.450000,2,17.190000,2,12C2,9.110000,3.240000,6.520000,5.200000,4.700000L5.200000,4.700000L3,2.500000L9,2.500000ZM13,2.050000C18.050000,2.550000,22,6.810000,22,12C22,14.890000,20.760000,17.480000,18.800000,19.300000L18.800000,19.300000L21,21.500000L15,21.500000L15,15.500000L17.380000,17.880000C18.980000,16.420000,20,14.330000,20,12C20,7.930000,16.940000,4.560000,13,4.070000L13,4.070000Z" transform="translate(-12,-12.000001)" opacity="0.24" fill-rule="evenodd" stroke="none" stroke-width="1"/>
+      </g>
+      <polygon id="e5kav7zkt7cn4" points="17.660000,9.530000 10.590000,16.600000 6.350000,12.360000 7.760000,10.950000 10.590000,13.780000 16.250000,8.120000" stroke="none" stroke-width="1"/>
+    </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="last-successful">
         <title>last-build-successful</title>
         <g fill="none" fill-rule="evenodd">

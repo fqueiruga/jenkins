@@ -263,7 +263,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-person icon-sm", "16x16/person.gif", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new Icon("icon-plugin icon-sm", "16x16/plugin.gif", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new SvgIcon("icon-red icon-sm", "#last-failed", Icon.ICON_SMALL_STYLE, true));
-        icons.addIcon(new SvgIcon("icon-red-anime icon-sm", "build-status/last-failed-new-in-progress.svg", Icon.ICON_SMALL_STYLE));
+        icons.addIcon(new SvgIcon("icon-red-anime icon-sm", "#last-failed-new-in-progress", Icon.ICON_SMALL_STYLE, true));
         icons.addIcon(new Icon("icon-redo icon-sm", "16x16/redo.gif", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new Icon("icon-save icon-sm", "16x16/save.gif", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new Icon("icon-search icon-sm", "16x16/search.gif", Icon.ICON_SMALL_STYLE));
@@ -316,7 +316,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-package icon-sm", "16x16/package.png", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new Icon("icon-person icon-sm", "16x16/person.png", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new Icon("icon-plugin icon-sm", "16x16/plugin.png", Icon.ICON_SMALL_STYLE));
-        icons.addIcon(new Icon("icon-red icon-sm", "build-status/last-failed.svg", Icon.ICON_SMALL_STYLE));
+        icons.addIcon(new SvgIcon("icon-red icon-sm", "#last-failed", Icon.ICON_SMALL_STYLE, true));
         icons.addIcon(new Icon("icon-redo icon-sm", "16x16/redo.png", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new Icon("icon-save icon-sm", "16x16/save.png", Icon.ICON_SMALL_STYLE));
         icons.addIcon(new Icon("icon-search icon-sm", "16x16/search.png", Icon.ICON_SMALL_STYLE));
@@ -382,7 +382,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-package icon-md", "24x24/package.gif", Icon.ICON_MEDIUM_STYLE));
         icons.addIcon(new Icon("icon-previous icon-md", "24x24/previous.gif", Icon.ICON_MEDIUM_STYLE));
         icons.addIcon(new SvgIcon("icon-red icon-md", "#last-failed", Icon.ICON_MEDIUM_STYLE, true));
-        icons.addIcon(new SvgIcon("icon-red-anime icon-md", "build-status/last-failed-new-in-progress.svg", Icon.ICON_MEDIUM_STYLE));
+        icons.addIcon(new SvgIcon("icon-red-anime icon-md", "#last-failed-new-in-progress", Icon.ICON_MEDIUM_STYLE, true));
         icons.addIcon(new Icon("icon-redo icon-md", "24x24/redo.gif", Icon.ICON_MEDIUM_STYLE));
         icons.addIcon(new Icon("icon-refresh icon-md", "24x24/refresh.gif", Icon.ICON_MEDIUM_STYLE));
         icons.addIcon(new Icon("icon-save icon-md", "24x24/save.gif", Icon.ICON_MEDIUM_STYLE));
@@ -483,7 +483,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-nobuilt-anime icon-lg", "32x32/nobuilt_anime.gif", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new Icon("icon-plugin icon-lg", "32x32/plugin.gif", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new SvgIcon("icon-red icon-lg", "build/status/build-status-sprite#last-failed", Icon.ICON_LARGE_STYLE, true));
-        icons.addIcon(new SvgIcon("icon-red-anime icon-lg", "build-status/last-failed-new-in-progress.svg", Icon.ICON_LARGE_STYLE));
+        icons.addIcon(new SvgIcon("icon-red-anime icon-lg", "#last-failed-new-in-progress", Icon.ICON_LARGE_STYLE, true));
         icons.addIcon(new Icon("icon-setting icon-lg", "32x32/setting.gif", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new Icon("icon-star-gold icon-lg", "32x32/star-gold.gif", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new Icon("icon-star icon-lg", "32x32/star.gif", Icon.ICON_LARGE_STYLE));
@@ -516,7 +516,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-orange-square icon-lg", "32x32/orange-square.png", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new Icon("icon-package icon-lg", "32x32/package.png", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new Icon("icon-plugin icon-lg", "32x32/plugin.png", Icon.ICON_LARGE_STYLE));
-        icons.addIcon(new SvgIcon("icon-red icon-lg", "build-status/last-failed.svg", Icon.ICON_LARGE_STYLE));
+        icons.addIcon(new SvgIcon("icon-red icon-lg", "#last-failed", Icon.ICON_LARGE_STYLE, true));
         icons.addIcon(new Icon("icon-secure icon-lg", "32x32/secure.png", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new Icon("icon-setting icon-lg", "32x32/setting.png", Icon.ICON_LARGE_STYLE));
         icons.addIcon(new Icon("icon-star-gold icon-lg", "32x32/star-gold.png", Icon.ICON_LARGE_STYLE));
@@ -565,7 +565,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-package icon-xlg", "48x48/package.gif", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-plugin icon-xlg", "48x48/plugin.gif", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new SvgIcon("icon-red icon-xlg", "#last-failed", Icon.ICON_XLARGE_STYLE, true));
-        icons.addIcon(new SvgIcon("icon-red-anime icon-xlg", "build-status/last-failed-new-in-progress.svg", Icon.ICON_XLARGE_STYLE));
+        icons.addIcon(new SvgIcon("icon-red-anime icon-xlg", "#last-failed-new-in-progress", Icon.ICON_XLARGE_STYLE, true));
         icons.addIcon(new Icon("icon-redo icon-xlg", "48x48/redo.gif", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-refresh icon-xlg", "48x48/refresh.gif", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-search icon-xlg", "48x48/search.gif", Icon.ICON_XLARGE_STYLE));
@@ -583,7 +583,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-aborted icon-xlg", "48x48/aborted.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-accept icon-xlg", "48x48/accept.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-attribute icon-xlg", "48x48/attribute.png", Icon.ICON_XLARGE_STYLE));
-        icons.addIcon(new SvgIcon("icon-blue icon-xlg", "build-status/build-status-sprite.svg#last-successful", Icon.ICON_XLARGE_STYLE, true));
+        icons.addIcon(new SvgIcon("icon-blue icon-xlg", "#last-successful", Icon.ICON_XLARGE_STYLE, true));
         icons.addIcon(new Icon("icon-clipboard icon-xlg", "48x48/clipboard.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-computer-x icon-xlg", "48x48/computer-x.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-computer icon-xlg", "48x48/computer.png", Icon.ICON_XLARGE_STYLE));
@@ -612,7 +612,7 @@ public class IconSet {
         icons.addIcon(new Icon("icon-orange-square icon-xlg", "48x48/orange-square.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-package icon-xlg", "48x48/package.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-plugin icon-xlg", "48x48/plugin.png", Icon.ICON_XLARGE_STYLE));
-        icons.addIcon(new SvgIcon("icon-red icon-xlg", "build-status/last-failed.svg", Icon.ICON_XLARGE_STYLE));
+        icons.addIcon(new SvgIcon("icon-red icon-xlg", "#last-failed", Icon.ICON_XLARGE_STYLE, true));
         icons.addIcon(new Icon("icon-redo icon-xlg", "48x48/redo.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-refresh icon-xlg", "48x48/refresh.png", Icon.ICON_XLARGE_STYLE));
         icons.addIcon(new Icon("icon-search icon-xlg", "48x48/search.png", Icon.ICON_XLARGE_STYLE));

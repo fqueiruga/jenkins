@@ -70,7 +70,6 @@ THE SOFTWARE.
 <!--  </pre>-->
   <j:choose>
       <j:when test="${isSpriteSymbol}">
-        <pre>--${attrs.class}--</pre>
         <l:svgIcon href="${imgSrc}" style="${imgStyle}" class="${attrs.class}" />
       </j:when>
     <j:otherwise>
