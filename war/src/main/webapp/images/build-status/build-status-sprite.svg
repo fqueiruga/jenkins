@@ -1,0 +1,30 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="last-failed-new-in-progress">
+    <title>last-failed-new-in-progress-1</title>
+    <g fill="none" fill-rule="evenodd">
+      <path d="M24.653 12.197a.5.5 0 01.064.064l2.432 2.919a.5.5 0 01-.384.82h-1.099c-.952 5.676-5.888 10-11.834 10-5.018 0-9.317-3.08-11.109-7.454l2.93-.786A9.003 9.003 0 0022.609 16H21.9a.5.5 0 01-.384-.82l2.432-2.92a.5.5 0 01.705-.063zM13.833 2c5.021 0 9.322 3.085 11.112 7.462l-2.93.786A9.003 9.003 0 005.055 12l.81-.001a.5.5 0 01.384.82l-2.432 2.92a.5.5 0 01-.769 0L.616 12.82A.5.5 0 011 12h.998C2.95 6.326 7.886 2 13.832 2z" fill="#EB383B" fill-rule="nonzero"></path>
+      <path d="M18 10l-8 8 8-8zm-8 0l8 8-8-8z" stroke="#EB383B" stroke-width="3"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="last-failed">
+    <title>last-build-failed</title>
+    <g fill="none" fill-rule="evenodd" stroke="#EB383B" stroke-width="3">
+      <circle class="svg-icon__progress-circle" cx="12" cy="12" r="10.5"></circle>
+      <path d="M16 8l-8 8 8-8zM8 8l8 8-8-8z"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="last-successful-new-in-progress">
+    <title>last-successful-new-in-progress-1</title>
+    <g fill="#4CAF51" fill-rule="evenodd">
+      <path d="M24.653 12.197a.5.5 0 01.064.064l2.432 2.919a.5.5 0 01-.384.82h-1.099c-.952 5.676-5.888 10-11.834 10-5.018 0-9.317-3.08-11.109-7.454l2.93-.786A9.003 9.003 0 0022.609 16H21.9a.5.5 0 01-.384-.82l2.432-2.92a.5.5 0 01.705-.063zM13.833 2c5.021 0 9.322 3.085 11.112 7.462l-2.93.786A9.003 9.003 0 005.055 12l.81-.001a.5.5 0 01.384.82l-2.432 2.92a.5.5 0 01-.769 0L.616 12.82A.5.5 0 011 12h.998C2.95 6.326 7.886 2 13.832 2z" fill-rule="nonzero"></path>
+      <path d="M12.843 18.894L8.6 14.65l2.121-2.121 2.121 2.121 4.951-4.95 2.122 2.121-7.072 7.073z"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="last-successful">
+    <title>last-build-successful</title>
+    <g fill="none" fill-rule="evenodd">
+      <circle class="svg-icon__progress-circle" stroke-width="3" cx="12" cy="12" r="10.5"></circle>
+      <path d="M10.843 16.894L6.6 12.65l2.121-2.121 2.121 2.121 4.951-4.95 2.122 2.121-7.072 7.073z" fill="#4CAF51"></path>
+    </g>
+  </symbol>
+</svg>

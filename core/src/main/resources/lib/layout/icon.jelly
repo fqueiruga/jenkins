@@ -23,7 +23,7 @@ THE SOFTWARE.
 -->
 
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:bs="/lib/layout/buildStatus">
   <st:documentation>
     @since 1.576
     <st:attribute name="class">
@@ -61,9 +61,22 @@ THE SOFTWARE.
   <j:if test="${iconMetadata != null}">
     <j:set var="imgSrc" value="${iconMetadata.getQualifiedUrl(context)}"/>
     <j:set var="imgStyle" value="${iconMetadata.style} ${attrs.style}"/>
+    <j:set var="isInlineSvg" value="${iconMetadata.isInlineSvg()}" />
+    <j:set var="isSpriteSymbol" value="${iconMetadata.isSpriteSymbol()}" />
   </j:if>
 
-  <img class="${attrs.class}" src="${imgSrc}" style="${imgStyle}" title="${attrs.title}" height="${attrs.height}"
-       alt="${attrs.alt}" width="${attrs.width}" onclick="${attrs.onclick}" tooltip="${attrs.tooltip }"/>
+<!--  <pre>-->
+<!--    -${iconMetadata.isInlineSvg()}-${iconMetadata.toString()}-${imgSrc}- -->
+<!--  </pre>-->
+  <j:choose>
+      <j:when test="${isSpriteSymbol}">
+        <pre>--${attrs.class}--</pre>
+        <l:svgIcon href="${imgSrc}" style="${imgStyle}" class="${attrs.class}" />
+      </j:when>
+    <j:otherwise>
+      <img class="${attrs.class}" src="${imgSrc}" style="${imgStyle}" title="${attrs.title}" height="${attrs.height}"
+           alt="${attrs.alt}" width="${attrs.width}" onclick="${attrs.onclick}" tooltip="${attrs.tooltip }"/>
+    </j:otherwise>
+  </j:choose>
 
 </j:jelly>

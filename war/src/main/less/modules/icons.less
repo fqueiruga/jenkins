@@ -29,3 +29,57 @@
   width: 64px;
   height: 64px;
 }
+
+/* Build status icons */
+.animated-spin,
+.icon-blue-anime,
+.icon-red-anime {
+  will-change: transform;
+  // animation: blink 1s infinite linear;
+}
+
+.icon-blue,
+.icon-blue-anime {
+  fill: var(--success);
+  // fill: lightsalmon;
+  // stroke: lightsalmon;
+}
+
+.svg-icon__progress-circle,
+.svg_icon circle {
+  stroke: currentColor;
+  stroke-dasharray: 150,200;
+  stroke-dashoffset: -10;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
